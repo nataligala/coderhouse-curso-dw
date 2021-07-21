@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*--------- GENERALES ----------*/
+/*Variables colores-fuentes*/
+:root{ 
+    /* --- Paleta de colores --- */
+    --white: #FFFFFF;
+
+    /*Green*/
+    --dark-green: rgba(98,118,95,1);
+    --medium-green: rgba(154,194,160,1);
+    --light-green: #b4d5b9;
+
+    /*Blue*/
+    --dark-blue:  #1F304F;
+    --medium-blue: #415C72;
+    --light-blue:#557B97;
+
+    /*Pink*/
+    --dark-pink: #E7D6CF;
+    --light-pink: #F9E4EC;
+
+    /*Grey*/
+    --dark-grey: #808080;
+    --medium-grey: #C2C2C2;
+    --light-grey:  #a8a8a8;
+
+    /* --- Fuentes --- */
+    --sans-narrow: "PT Sans Narrow", sans-serif;
+    --dancing-script: "Dancing Script", cursive;
+
+    /* --- Background secciones --- */
+    --bg-color-header: var(--white); 
+    --bg-color-header-hover: var(--light-green);
+    --bg-color-footer: var(--medium-green);
+    --bg-color-form: var(--light-pink);
+    --bg-color-colection: var(--light-pink);
+
+    /* --- Background elementos --- */
+    --bg-color-buttom: var(--light-blue);
+    --bg-color-hover-buttom: var(--dark-blue);
+
+
+    --bg-color-buttom-cart: var(--medium-green);
+    --bg-color-hover-buttom-cart: var(--dark-green);
+
+    --line-color: var(--dark-grey);
+
+    /* Fonts */
+    --font-principal: var(--sans-narrow);
+    --font-secundaria: var(--dancing-script);
+
+    /* Font Colors */
+    --title-color: var(--dark-blue);
+    --font-color: var(--light-grey); 
+    --btn-color: var(--white);
+    --logo-color: var(--dark-green);
+    --font-color-footer: var(--white);
+
+
+
+    /*Background secciones */
+    --bg-color-hover: #b4d5b9;
+    --bg-color-hover-buttom: #415C72;
+
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+/* HEADER */
+.header{
+    background-color: var(--bg-color-header);
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header__img{
+    width: 50px;
+    height: 50px;
+}
+
+.header__list{
+    display: flex;
+}
+
+.header__list-li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+
+.header__nav-link:hover{
+    background-color: var(--bg-color-hover);
+    color: var(--bg-color-header)
+}
+
+.header__nav-link:active{
+    font-weight: bolder;
+}
+
+.header__nav-link{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.header__search-input{
+    height: 30px;
+    width: 200px;
+    border: 1px solid var(--light-grey);
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 5px;
+}
+
+
+.header__search-icon{
+    vertical-align:middle;
+}
+
+
+.banner__header-img{
+    width: 100%;
+}
+
+/* PAGE TITlE */
+.page{
+    height: 100px;
+    border-top: 0.1px solid var(--light-grey);
+    border-bottom: 0.1px solid var(--light-grey);
+}
+
+.page__title{
+    margin: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.page__description{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* FOOTER */
+.footer__container{
+    border-top: 1px solid var(--light-grey);
+    background-color: var(--bg-color-footer);
+    height: 200px;
+    padding-top: 50px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+
+.footer__link{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer__text{
+    font-size: 1.2em;
+    color: var(--font-color-footer);
+}
+
+
+
+/* ////////// PÁGINA INDEX //////////  */
+
+
+/* Presentación */
+.intro{
+    height: 150px;
+    margin: 50px;
+}
+
+.intro__container{
+    line-height: 1.5;
+}
+
+.intro__title{
+    font-family: var(--font-secundaria);
+    color: var(--logo-color);
+    font-size: 60px;
+    text-align: center;
+}
+
+.intro__logo{
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.intro__text{
+    color: var(--font-color);
+    font-size: 19px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+
+/* Colección Destacada */
+.featured__collection{
+    height: 600px;
+}
+
+.featured__collection-title{
+    color: var(--title-color);
+    letter-spacing: 0.5em;
+    padding: 20px;
+    text-align: center;
+}
+
+.featured__collection-container{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.card{
+    box-shadow: 2px 2px 5px 1px var(--font-color);
+}
+/* Clases de bootstrap modificadas */
+.card-img-top{
+    height: 10%;
+}
+
+.card-img-top:hover{
+    opacity: 0.7;
+}
+
+.btn{
+    background-color: var(--bg-color-buttom);
+    color: var(--bg-color-header);
+}
+
+.btn:hover{
+    background-color: var(--bg-color-hover-buttom);
+    color: var(--bg-color-header);
+}
+
+
+
+
+
+
+/* Diseños Exclusivos */
+
+.designs__container{ 
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.designs__img{
+    height: 60%;
+}
+
+.designs__texts{
+    width: 300px;
+    margin-left: 40px ;
+}
+
+.designs__title{
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
+
+
+
+/* Entregas */
+.delivery__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.delivery__title{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.delivery__description{
+    margin-bottom: 10px;
+}
+
+
+/* ////////// PÁGINA FLORES //////////  */
+
+
+
+.rosa__before:hover{
+    content: url(../images/img_flores/rosas2.jpg);
+    object-fit: contain;
+}
+
+
+/* ////////// PÁGINA PLANTAS //////////  */
+
+
+#products .products__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.products__img-container{
+    margin: 30px;
+}
+
+.products__img-texts{
+    display: flex;
+    align-items: baseline;
+    justify-content:space-around;
+    font-weight: bold;
+}
+
+.products__img{
+    width: 300px;
+    margin: 10px;
+}
+
+/* ////////// PÁGINA ARREGLOS FLORALES //////////  */
+.collection{
+    margin-top: 50px;
+}
+
+.collection__container{
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+
+
+.collection__title{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.collection__nav-link{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.collection__imgs-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.collection__img{
+    width: 250px;
+    margin: 20px;
+}
+
+
+/* Sección Especial */
+
+.special{
+    height: 800px;
+    margin: 200px 0 150px 0;
+    position: relative;
+}
+
+.special__container{
+    height: 600px;
+    background: rgb(231,214,207);
+    background: linear-gradient(180deg, rgba(231,214,207,0.9304096638655462) 42%, rgba(98,118,95,1) 100%);
+}
+
+.special__img{
+    width: 750px;
+    position: absolute;
+    top: -123px;
+    left: 550px;
+}
+
+.special__img-left{
+    width: 300px;
+    position: absolute;
+    top: 370px;
+    left: 20px;
+}
+
+.special__img-right{
+    width: 300px;
+    position: absolute;
+    left: 900px;
+    top: 420px;
+}
+
+.special__img-bottom{
+    width: 400px;
+    position: absolute;
+    left: 400px;
+    top: 400px;
+}
+
+.special__description{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    top: 90px;
+    left: 100px;
+    background-color: var(--bg-color-header);
+    z-index: 1;
+}
+
+
+.special__text{
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+
+
+/* ////////// PÁGINA CONTACTO //////////   */
+
+/* Formulario */
+.form{
+    margin: 50px;
+}
+
+.form__title{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__container{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px var(--font-color);
+    width: 30%;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 30px;
+}
+
+.form__input{
+    width: 100%;
+    border-radius: 7px;
+    height: 25px;
+    border: 1px solid var(--dark-pink); 
+}
+
+.form__input:focus{
+    outline: none;
+    background-color: ivory;
+}
+
+
+.form__textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    max-height: 150px;
+    border-radius: 7px;
+    border: 1px solid var(--dark-pink);
+}
+
+.form__textarea:focus{
+    outline: none;
+    background-color: #fff7d9;
+}
+
+
