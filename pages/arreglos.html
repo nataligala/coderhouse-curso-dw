@@ -6,28 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda de Flores Babel: Las mejores propuestas florales para hacer tus ideas realidad.">  
     <meta name="keywords" content="FLORES, PLANTAS, ROSAS, LILIUM, GERBERAS, ALSTROEMERIA, LISIANTHUS, TIENDA DE FLORES, RAMOS DE FLORES, ARREGLOS FLORALES, CENTROS DE MESA, REGALOS FLORALES">
-    
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="../images/logos/logo-babel.ico"/>
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
     <!--AOS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/d7dbe38a17.js" crossorigin="anonymous"></script>        
     <!-- CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Arreglos Florales | Flores Babel®</title>
 </head>
 <body>
     <header class="header">
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <a href="../index.html" class="header__link">
-                <img src="../images/logos/png/logo-babel.png" class="header__img" alt="Logo Flores Babel">
-            </a>
-            <a class="flex-sm-fill text-sm-center nav-link header__nav-link" aria-current="page" href="../index.html">Inicio</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__nav-link" href="flores.html" class="header__nav-link">Flores</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__nav-link" href="plantas.html" class="header__nav-link">Plantas</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__nav-link" href="arreglos.html" class="header__nav-link">Arreglos Florales</a>
-            <a class="flex-sm-fill text-sm-center nav-link header__nav-link" href="contacto.html" class="header__nav-link">Contacto</a>
-          </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header__nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand header__link">
+                    <img src="../images/logos/png/logo-babel.png" class="header__img" alt="Logo Flores Babel">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0>
+                        <li class="nav-item">
+                            <a class="flex-sm-fill nav-link header__nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="flex-sm-fill nav-link header__nav-link" href="./flores.html">Flores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="flex-sm-fill nav-link header__nav-link" href="./plantas.html">Plantas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="flex-sm-fill nav-link header__nav-link" href="#">Arreglos Florales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="flex-sm-fill nav-link header__nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex header__nav-form">
+                        <input class="form-control me-2" type="search" aria-label="Search">
+                        <button class="btn header__nav-form-btn" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>  
     
 
@@ -43,164 +69,73 @@
         <!-- Título página -->
         <section class="page">
             <h2 class="page__title">Arreglos Florales</h2>
-            <p class="page__description">Ofrecemos arreglos florales y pequeños centros de mesa para cada fecha especial.</p>
+            <p class="page__description">Selección especial de nuestras mejores flores para cada fecha especial.</p>
         </section>
 
         <!-- Sección Especial -->
         <section class="special">
             <div class="special__container">
-                <img data-aos="fade-down" data-aos-duration="3000" class="special__img" src="../images/img-arreglos/bouquet.jpg" alt="">
-            <div class="special__description">
-                <h3 class="special__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. provident ratione, harum blanditiis? Nullae tempore.</h3>
-            </div>
-                <img data-aos="zoom-in-left" data-aos-duration="1500" class="special__img-left" src="../images/img-arreglos/bouquet_left.jpg" alt="">
-                <img data-aos="zoom-in-right" data-aos-duration="1500" class="special__img-right" src="../images/img-arreglos/bouquet_right.jpg" alt="">
-                <img data-aos="zoom-in" data-aos-duration="2000" class="special__img-bottom" src="../images/img-arreglos/bouquet_bottom.jpg" alt="">
+                <img data-aos="fade-down" data-aos-duration="3000" class="special__img" src="../images/img_arreglos/bouquet.jpg" alt="">
+
+                <div class="special__description">
+                    <h3 class="special__text">Asesoramiento sin cargo para sorprender a tus seres queridos con un regalo único.</h3>
+                </div>
+                
+                <img data-aos="zoom-in-left" data-aos-duration="1500" class="special__img-left" src="../images/img_arreglos/bouquet_left.jpg" alt="">
+                <img data-aos="zoom-in-right" data-aos-duration="1500" class="special__img-right" src="../images/img_arreglos/bouquet_right.jpg" alt="">
+                <img data-aos="zoom-in" data-aos-duration="2000" class="special__img-bottom" src="../images/img_arreglos/bouquet_bottom.jpg" alt="">
             </div>
         </section>
 
-        
-        <section class="collection">
-            <div class="collection__container">
+        <!-- Bouquets-->
+        <section class="products">
+            <div data-aos="zoom-in" data-aos-duration="2000" class="products__container">
+                <div class="products__img-container">
+                    <img src="../images/img_arreglos/bouquet-atardecer.JPG" class="products__img" alt="Bouquet Atardecer">
+                    <div class="products__img-bq-texts">
+                        <span class="products__img-bq-name">Bouquet Atardecer</span>
+                        <!-- <span class="products__img-bq-description">Ramo brillante con rosas pink, gerberas amarillas y blancas. <br>Incluye florero de regalo</span> -->
+                    </div>
+                    <div class="products__btn-container">
+                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                    </div>
+                </div>
+    
+                <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
+                    <img src="../images/img_arreglos/bouquet-pink.JPG" class="products__img" alt="Bouquet Pink">
+                    <div class="products__img-bq-texts">
+                        <span class="products__img-bq-name">Bouquet Pink</span>
+                        <!-- <span class="products__img-price">Flores vibrantes en tonos rosa, rojo y rosa intenso.<br>Incluye florero de regalo</span> -->
+                    </div>
+                    <div class="products__btn-container">
+                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                    </div>
+                </div>
+    
+                <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
+                    <img src="../images/img_arreglos/bouquet-golden.JPG" class="products__img" alt="Bouquet Golden">
+                    <div class="products__img-bq-texts">
+                        <span class="products__img-bq-name">Bouquet Golden</span>
+                        <!-- <span class="products__img-price">Flores radiantes en tonos amarillos, naranjas y rosados. <br>Incluye florero de regalo</span> -->
+                    </div>
+                    <div class="products__btn-container">
+                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
 
-                <div class="collection__products">
-                    <h3 id="nacimientosBautismos" class="collection__title">Nacimientos - Bautismos</h3>
-                    <div class="collection__imgs-container">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/nacimientos-bautismos/IMG_5963 copia.jpg" alt="Arreglo Bautismo Nene y Osito">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Bautismo</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/nacimientos-bautismos/IMG_5963 copia.jpg" alt="Arreglo Bautismo Nene y Osito">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Bautismo</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/nacimientos-bautismos/IMG_5963 copia.jpg" alt="Arreglo Bautismo Nene y Osito">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Bautismo</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-
-                <div class="collection__products">
-                    <h3 id="aniversariosEnamorados" class="collection__title">Aniversarios - Día de los Enamorados</h3>
-                    <a href="#nacimientosBautismos" class="collection__nav-link"> Volver</a>
-                    <div class="collection__imgs-container"> 
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/aniversarios-enamorados/ArreglodeRosasFrenesi.jpg" alt="Arreglo Rosas Rojas">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Rosas Rojas</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/aniversarios-enamorados/ArreglodeRosasFrenesi.jpg" alt="Arreglo Rosas Rojas">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Rosas Rojas</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/aniversarios-enamorados/ArreglodeRosasFrenesi.jpg" alt="Arreglo Rosas Rojas">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Rosas Rojas</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                         </div>
-                    </div>    
-                </div>
-        
-                <div class="collection__products">
-                    <h3 id="diaDeLaMadre" class="collection__title">Día de la Madre</h3>
-                    <a href="#nacimientosBautismos" class="collection__nav-link"> Volver</a>
-                    <div class="collection__imgs-container">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/dia-de-la-madre/MammaMia.jpg" alt="Arreglo Mamma Mia">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Mamma Mia</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/dia-de-la-madre/MammaMia.jpg" alt="Arreglo Mamma Mia">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Mamma Mia</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/dia-de-la-madre/MammaMia.jpg" alt="Arreglo Mamma Mia">
-                            <div class="card-body">
-                              <h5 class="card-title">Arreglo Mamma Mia</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-
-                <div class="collection__products">
-                    <h3 id="centrosDeMesa" class="collection__title">Centros de Mesa</h3>
-                    <a href="#nacimientosBautismos" class="collection__nav-link"> Volver</a>
-                    <div class="collection__imgs-container">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/centros-de-mesa/centro-rosas.jpg" alt="Centro de Mesa Amor">
-                            <div class="card-body">
-                              <h5 class="card-title">Centro de Mesa Amor</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/centros-de-mesa/centro-rosas-rosadas.jpg" alt="Centro de Mesa Poet">
-                            <div class="card-body">
-                              <h5 class="card-title">Centro de Mesa Poet</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="../images/img-arreglos/centros-de-mesa/centro-lisianthus.jpg" alt="Centro de Mesa Lyla">
-                            <div class="card-body">
-                              <h5 class="card-title">Centro de Mesa Lyla</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                              <a href="#" class="btn">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </section>
-        </div>
     </main>
 
 
     <!-- Footer-->
     <footer class="footer">
         <div class="footer__container">
-            <span class="footer__text">Flores Babel | 1998 - 2021 | Buenos Aires, Argentina</span>
+            <span class="footer__text">Flores Babel® - Tienda de Flores | Buenos Aires, Argentina</span>
             <div  class="footer__social">
-                <a href="#" target="_blank" class="footer__link">
-                    <img src="../images/logos/png/facebook.png" class="footer__img" alt="Logo Facebook">
-                </a>
-                <a href="#" target="_blank" class="footer__link">
-                    <img src="../images/logos/png/instagram.png" class="footer__img" alt="Logo Instagram">
-                </a>
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook-square fa-2x footer__link"></a>
+                <a href="https://www.instagram.com/?hl=es-la" class="fa fa-instagram fa-2x footer__link"></a>
             </div>
         </div>
     </footer>

@@ -1,0 +1,159 @@
+// ---------- PAGINA INDEX
+
+/* -- Presentación -- */
+.intro {
+  margin: 130px;
+  .intro__container {
+    line-height: 1.5;
+
+    .intro__title {
+      font-family: $font-secundaria;
+      color: $logo-color;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .intro__logo {
+      width: 70px;
+      height: 70px;
+      vertical-align: middle;
+    }
+
+    .intro__text {
+      color: $font-color;
+      font-size: 19px;
+      font-weight: lighter;
+      text-align: center;
+    }
+  }
+}
+
+
+/* -- Colección Destacada -- */
+.featured {
+  height: 500px;
+
+  .featured__title {
+    color: $title-color;
+    letter-spacing: 0.4em;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .featured__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .featured__card {
+      box-shadow: 2px 2px 5px 1px $font-color;
+
+      /* Clase agregada para modificar clase bootstrap */
+      .featured__card-img {
+        height: 10%;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+
+    /* Clase agregada para modificar clase bootstrap */
+    .featured__card-btn {
+      background-color: $bg-color-buttom;
+      color: $btn-color;
+      &:hover {
+        background-color: $bg-color-hover-buttom;
+      }
+    }
+  }
+}
+
+/* -- Servicios -- */
+
+.services__container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/subs_banner.jpg);
+  margin: 100px 0;
+  .services__item {
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px $font-color;
+    width: 30%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    .services__icon {
+      color: $dark-green;
+      font-size: 40px;
+    }
+    .services__title {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/* -- Entregas -- */
+.delivery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 50px 90px 100px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px 1px $font-color;
+  .delivery__title {
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+  .delivery__description {
+    margin-bottom: 10px;
+  }
+
+  .contact__btn {
+    @extend .featured__card-btn;
+    background-color: $bg-color-buttom-cart;
+    margin-top: 20px;
+    align-self: center;
+    color: $btn-color;
+    &:hover {
+      background-color: $bg-color-hover-buttom-cart;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .featured{
+    height: fit-content;
+    .featured__container {
+      flex-direction: column;
+
+      .featured__card{
+        margin-top: 20px;
+      }
+    } 
+
+    .featured__card-body{
+      text-align: center;
+    }
+  }
+
+  .services{
+    .services__container{
+      height: fit-content;
+      flex-direction: column;
+      background-image: none;
+      background-color: $dark-green;
+
+      .services__item{
+        margin: 10px 5px;
+      } 
+    }
+  }
+}

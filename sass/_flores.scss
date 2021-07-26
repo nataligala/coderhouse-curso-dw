@@ -1,0 +1,13 @@
+
+
+.product__btn-fl-cart {
+  // ------------- Extend
+  @extend .featured__card-btn;
+  background-color: $dark-pink;
+  color: $dark-blue;
+  &:hover {
+    background-color: $bg-color-hover-buttom-cart;
+    color: $white;
+    transition: $transition-time;
+  }
+}

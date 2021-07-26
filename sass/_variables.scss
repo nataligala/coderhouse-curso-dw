@@ -1,0 +1,63 @@
+/* --- Paleta de colores --- */
+$white: #FFFFFF;
+$ivory: ivory;
+
+//Green
+$dark-green: rgba(98,118,95,1);
+$medium-green: rgba(154,194,160,1);
+$light-green: #b4d5b9;
+
+//Blue
+$dark-blue:  #1F304F;
+$medium-blue: #415C72;
+$light-blue:#557B97;
+
+//Pink
+$dark-pink: #E7D6CF;
+$light-pink: #F9E4EC;
+
+//Grey
+$dark-grey: #808080;
+$medium-grey: #C2C2C2;
+$light-grey:  #a8a8a8;
+
+
+/*Background secciones */
+$bg-color-header: $white; 
+$bg-color-header-hover: $light-green;
+$bg-color-footer: $medium-green;
+$bg-linear-footer-primary: $medium-green;
+$bg-linear-footer-secondary: $dark-green;
+$bg-color-form: $light-green;
+$bg-color-form-input: $ivory;
+$bg-color-colection: $light-pink;
+
+/* Background elementos */
+$bg-color-buttom: $light-blue;
+$bg-color-hover-buttom: $dark-blue;
+
+$bg-color-form-btn: $medium-green;
+$bg-color-form-btn-hover: $dark-green;
+
+
+$bg-color-buttom-cart: $medium-green;
+$bg-color-hover-buttom-cart: $dark-green;
+
+$line-color: $dark-grey;
+
+/* Font Colors */
+$title-color: $dark-blue;
+$font-color: $light-grey; 
+$btn-color: $white;
+$logo-color: $dark-green;
+
+/* Transición */
+$transition-time: 350ms linear;
+
+
+
+
+
+
+
+

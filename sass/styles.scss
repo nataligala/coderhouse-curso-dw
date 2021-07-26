@@ -1,0 +1,19 @@
+@import "reset";
+@import "fuentes";
+@import "variables";
+@import "footer";
+@import "header";
+@import "bannerprincipal";
+@import "titulopagina";
+
+@import "inicio";
+@import "flores";
+@import "plantas";
+@import "arreglos";
+@import "contacto";
+
+body {
+  font-family: $font-principal;
+}
+
+
