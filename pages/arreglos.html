@@ -94,10 +94,14 @@
                     <img src="../images/img_arreglos/bouquet-atardecer.JPG" class="products__img" alt="Bouquet Atardecer">
                     <div class="products__img-bq-texts">
                         <span class="products__img-bq-name">Bouquet Atardecer</span>
-                        <!-- <span class="products__img-bq-description">Ramo brillante con rosas pink, gerberas amarillas y blancas. <br>Incluye florero de regalo</span> -->
                     </div>
+
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#bouquetAtardecer">
+                            Ver Más
+                        </button>
                     </div>
                 </div>
     
@@ -105,21 +109,27 @@
                     <img src="../images/img_arreglos/bouquet-pink.JPG" class="products__img" alt="Bouquet Pink">
                     <div class="products__img-bq-texts">
                         <span class="products__img-bq-name">Bouquet Pink</span>
-                        <!-- <span class="products__img-price">Flores vibrantes en tonos rosa, rojo y rosa intenso.<br>Incluye florero de regalo</span> -->
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#bouquetPink">
+                            Ver Más
+                        </button>
                     </div>
                 </div>
     
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_arreglos/bouquet-golden.JPG" class="products__img" alt="Bouquet Golden">
                     <div class="products__img-bq-texts">
-                        <span class="products__img-bq-name">Bouquet Golden</span>
-                        <!-- <span class="products__img-price">Flores radiantes en tonos amarillos, naranjas y rosados. <br>Incluye florero de regalo</span> -->
+                        <span class="products__img-bq-name">Bouquet Dorado</span>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#bouquetDorado">
+                            Ver Más
+                        </button>
                     </div>
                 </div>
             </div>
@@ -133,15 +143,114 @@
     <footer class="footer">
         <div class="footer__container">
             <span class="footer__text">Flores Babel® - Tienda de Flores | Buenos Aires, Argentina</span>
-            <div  class="footer__social">
+            <div class="footer__social">
                 <a href="https://es-la.facebook.com/" class="fa fa-facebook-square fa-2x footer__link"></a>
                 <a href="https://www.instagram.com/?hl=es-la" class="fa fa-instagram fa-2x footer__link"></a>
             </div>
         </div>
     </footer>
+    
+    
+    <!-- Modal Bouquet Atardecer-->
+    <div class="modal fade" id="bouquetAtardecer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-7">
+                                <img src="../images/img_arreglos/bouquet-atardecer.JPG" class="img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bouquet Atardecer</h5>
+                                    <p class="card-text">Ramo brillante con Rosas Pink, Gerberas amarillas y blancas, junto
+                                        con delicados detalles de helechos.</p>
+                                    <p class="card-text">20-24 flores mixtas.</p>
+                                    <p class="card-text"><small class="text-muted">*Incluye florero de regalo</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Bouquet Pink-->
+    <div class="modal fade" id="bouquetPink" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-7">
+                                <img src="../images/img_arreglos/bouquet-pink.JPG" class="img-fluid rounded-start"
+                                    alt="Bouquet Pink">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bouquet Pink</h5>
+                                    <p class="card-text">Gerberas vibrantes en tonos rosa, rojo y rosa intenso.</p>
+                                    <p class="card-text">20-24 flores mixtas.</p>
+                                    <p class="card-text"><small class="text-muted">*Incluye florero de regalo</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Bouquet Dorado-->
+    <div class="modal fade" id="bouquetDorado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-7">
+                                <img src="../images/img_arreglos/bouquet-golden.JPG" class="img-fluid rounded-start"
+                                    alt="Bouquet Golden">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bouquet Dorado</h5>
+                                    <p class="card-text">Flores radiantes en tonos amarillos, naranjas y rosados.</p>
+                                    <p class="card-text">12 Rosas pink y 6 Liliums</p>
+                                    <p class="card-text"><small class="text-muted">*Incluye florero de regalo</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

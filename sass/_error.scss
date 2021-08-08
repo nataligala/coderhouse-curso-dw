@@ -1,0 +1,54 @@
+.video{
+    margin-bottom: 20px;
+    .video__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        .video__item{
+            height: 70vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .video{
+        .video__container{
+            .video__item{
+                height: 50vh;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .page{
+        .page__title{
+            font-size: 1.5em;
+        }
+    }
+
+    .video{
+        .video__container{
+            .video__item{
+                height: 40vh;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .page{
+        .page__title{
+            font-size: 1.1em;
+        }
+    }
+
+    .video{
+        .video__container{
+            .video__item{
+                height: 30vh;
+            }
+        }
+    }
+}

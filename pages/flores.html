@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda de Flores Babel: Las mejores propuestas florales para hacer tus ideas realidad.">  
-    <meta name="keywords" content="FLORES, PLANTAS, ROSAS, LILIUM, GERBERAS, ALSTROEMERIA, LISIANTHUS, TIENDA DE FLORES, RAMOS DE FLORES, ARREGLOS FLORALES, CENTROS DE MESA, REGALOS FLORALES">
+    <meta name="description"
+        content="Tienda de Flores Babel: Las mejores propuestas florales para hacer tus ideas realidad.">
+    <meta name="keywords"
+        content="FLORES, PLANTAS, ROSAS, LILIUM, GERBERAS, ALSTROEMERIA, LISIANTHUS, TIENDA DE FLORES, RAMOS DE FLORES, ARREGLOS FLORALES, CENTROS DE MESA, REGALOS FLORALES">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="../images/logos/logo-babel.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="../images/logos/logo-babel.ico" />
     <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FontAwesome-->
-    <script src="https://kit.fontawesome.com/d7dbe38a17.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/d7dbe38a17.js" crossorigin="anonymous"></script>
     <!-- CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Flores | Flores Babel®</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light header__nav">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="../index.html" class="navbar-brand header__link">
@@ -41,7 +47,8 @@
                             <a class="flex-sm-fill nav-link header__nav-link" href="./plantas.html">Plantas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="flex-sm-fill nav-link header__nav-link" href="./arreglos.html">Arreglos Florales</a>
+                            <a class="flex-sm-fill nav-link header__nav-link" href="./arreglos.html">Arreglos
+                                Florales</a>
                         </li>
                         <li class="nav-item">
                             <a class="flex-sm-fill nav-link header__nav-link" href="./contacto.html">Contacto</a>
@@ -54,8 +61,8 @@
                 </div>
             </div>
         </nav>
-    </header>  
-    
+    </header>
+
 
 
     <main>
@@ -63,207 +70,138 @@
         <section class="banner__header">
             <img src="../images/banners/banner-flores.jpg" class="banner__header-img" alt="Flores">
         </section>
-    
-    
+
+
         <!-- Título página -->
         <section class="page">
             <h2 class="page__title">Flores</h2>
             <p class="page__description">Elegí entre nuestra variedad de Rosas, Alstroemerias, Lisianthus y Liliums.</p>
         </section>
-    
+
         <!-- Colección de Flores -->
         <section class="products">
             <div class="products__container">
-                <!-- Rosas-->
-                <div data-aos="zoom-in" data-aos-duration="2000"  class="products__img-container">
+
+                <!-- Rosas Rojas-->
+                <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/rosas-rojas.JPG" class="products__img" alt="Ramo de Rosas Rojas">
                     <div class="products__img-texts">
                         <span class="products__img-name">Rosas Rojas</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$1000</option>
-                            <option value="2">24 unidades___$2000</option>
-                            <option value="3">36 unidades___$3000</option>
-                        </select>
                     </div>
-                    <div class="products__btn-container">
+                    <!-- <div class="products__btn-container">
                         <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                    </div> -->
+                    <!-- Button trigger modal -->
+                    <div class="products__btn-container">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#rosasRojas">
+                            Ver Más
+                        </button>
                     </div>
                 </div>
-    
+
+                <!-- Rosas Blancas -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/rosas-blancas.JPG" class="products__img" alt="Ramo de Rosas Blancas">
                     <div class="products__img-texts">
                         <span class="products__img-name">Rosas Blancas</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$1000</option>
-                            <option value="2">24 unidades___$2000</option>
-                            <option value="3">36 unidades___$3000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#rosasBlancas">Ver Más</button>
                     </div>
                 </div>
-    
+
+                <!-- Rosas Pink -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/rosas-pink.JPG" class="products__img" alt="Ramo de Rosas Pink">
                     <div class="products__img-texts">
                         <span class="products__img-name">Rosas Pink</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$1000</option>
-                            <option value="2">24 unidades___$2000</option>
-                            <option value="3">36 unidades___$3000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
-                    </div>
-                </div>
-    
-                <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
-                    <img src="../images/img_flores/rosas-bicolor.JPG" class="products__img" alt="Ramo de Rosas Bicolor">
-                    <div class="products__img-texts">
-                        <span class="products__img-name">Rosas Bicolor</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$1000</option>
-                            <option value="2">24 unidades___$2000</option>
-                            <option value="3">36 unidades___$3000</option>
-                        </select>
-                    </div>
-                    <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
-                    </div>
-                </div>
-    
-                <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
-                    <img src="../images/img_flores/rosas-lavanda.JPG" class="products__img" alt="Ramo de Rosas Lavanda">
-                    <div class="products__img-texts">
-                        <span class="products__img-name">Rosas Lavanda</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$1000</option>
-                            <option value="2">24 unidades___$2000</option>
-                            <option value="3">36 unidades___$3000</option>
-                        </select>
-                    </div>
-                    <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
-                    </div>
-                </div>
-    
-                <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
-                    <img src="../images/img_flores/rosas-fucsia.JPG" class="products__img" alt="Ramo de Rosas Fucsia">
-                    <div class="products__img-texts">
-                        <span class="products__img-name">Rosas Fucsia</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$1000</option>
-                            <option value="2">24 unidades___$2000</option>
-                            <option value="3">36 unidades___$3000</option>
-                        </select>
-                    </div>
-                    <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#rosasPink">Ver Más</button>
                     </div>
                 </div>
 
+                <!-- Lisianthus -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/lisianthus.jpg" class="products__img" alt="Ramo de Lisianthus">
                     <div class="products__img-texts">
                         <span class="products__img-name">Lisianthus</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$500</option>
-                            <option value="2">24 unidades___$1000</option>
-                            <option value="3">36 unidades___$2000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#lisianthus">Ver Más</button>
                     </div>
                 </div>
 
+                <!-- Alstroemerias Arcoiris -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/alstroemeria.jpg" class="products__img" alt="Ramo de Alstroemeria">
                     <div class="products__img-texts">
                         <span class="products__img-name">Alstroemerias Arcoiris</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$500</option>
-                            <option value="2">24 unidades___$1000</option>
-                            <option value="3">36 unidades___$2000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#alstroemeriasArcoiris">Ver Más</button>
                     </div>
                 </div>
 
+                <!-- Alstroemerias Otoño -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
-                    <img src="../images/img_flores/alstroemeria-otonio.JPG" class="products__img" alt="Ramo de Alstroemeria">
+                    <img src="../images/img_flores/alstroemeria-otonio.JPG" class="products__img"
+                        alt="Ramo de Alstroemeria">
                     <div class="products__img-texts">
                         <span class="products__img-name">Alstroemerias Otoño</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$500</option>
-                            <option value="2">24 unidades___$1000</option>
-                            <option value="3">36 unidades___$2000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#alstroemeriasOtonio">Ver Más</button>
                     </div>
                 </div>
 
+                <!-- Lilium Pink -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/lilium-pink.JPG" class="products__img" alt="Ramo de Lilium">
                     <div class="products__img-texts">
                         <span class="products__img-name">Lilium Pink</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$500</option>
-                            <option value="2">24 unidades___$1000</option>
-                            <option value="3">36 unidades___$2000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#liliumPink">Ver Más</button>
                     </div>
                 </div>
 
+                <!-- Lilium Blancas -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
-                    <img src="../images/img_flores/lilium-orange.JPG" class="products__img" alt="Ramo de Lilium">
+                    <img src="../images/img_flores/lilium-blancas.JPG" class="products__img" alt="Ramo de Lilium">
                     <div class="products__img-texts">
-                        <span class="products__img-name">Lilium Orange</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$500</option>
-                            <option value="2">24 unidades___$1000</option>
-                            <option value="3">36 unidades___$2000</option>
-                        </select>
+                        <span class="products__img-name">Lilium Blancas</span>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#liliumBlancas">Ver Más</button>
                     </div>
                 </div>
 
+                <!-- Lilium Golden -->
                 <div data-aos="zoom-in" data-aos-duration="2000" class="products__img-container">
                     <img src="../images/img_flores/lilium-golden.JPG" class="products__img" alt="Ramo de Lilium">
                     <div class="products__img-texts">
                         <span class="products__img-name">Lilium Golden</span>
-                        <select name="request" id="request" class="form__item form__input">
-                            <option selected>Seleccionar Cantidad</option>
-                            <option value="1">12 unidades___$500</option>
-                            <option value="2">24 unidades___$1000</option>
-                            <option value="3">36 unidades___$2000</option>
-                        </select>
                     </div>
+                    <!-- Button trigger modal -->
                     <div class="products__btn-container">
-                        <input class="products__btn product__btn-fl-cart" type="button" value="Agregar al Carrito">
+                        <button type="button" class="products__btn product__btn-fl-cart" data-bs-toggle="modal"
+                            data-bs-target="#liliumGolden">Ver Más</button>
                     </div>
                 </div>
             </div>
@@ -275,20 +213,609 @@
     <footer class="footer">
         <div class="footer__container">
             <span class="footer__text">Flores Babel® - Tienda de Flores | Buenos Aires, Argentina</span>
-            <div  class="footer__social">
+            <div class="footer__social">
                 <a href="https://es-la.facebook.com/" class="fa fa-facebook-square fa-2x footer__link"></a>
                 <a href="https://www.instagram.com/?hl=es-la" class="fa fa-instagram fa-2x footer__link"></a>
             </div>
         </div>
     </footer>
 
+
+    <!-- INICIO MODALES -->
+
+    <!-- Modal Rosas Rojas-->
+    <div class="modal fade" id="rosasRojas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/rosas-rojas2.JPG" class="img-fluid rounded-start"
+                                    alt="Rosas Rojas">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosas Rojas</h5>
+                                    <p class="card-text">Rosas importadas de Ecuador.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">12 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">24 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">36 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rosas Blancas-->
+    <div class="modal fade" id="rosasBlancas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/rosas-blancas2.JPG" class="img-fluid rounded-start"
+                                    alt="Rosas Blancas">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosas Blancas</h5>
+                                    <p class="card-text">Rosas importadas de Ecuador.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">12 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">24 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">36 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rosas Pink-->
+    <div class="modal fade" id="rosasPink" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/rosas-pink2.JPG" class="img-fluid rounded-start" alt="Rosas Pink">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosas Pink</h5>
+                                    <p class="card-text">Rosas importadas de Ecuador.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">12 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">24 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">36 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lisianthus -->
+    <div class="modal fade" id="lisianthus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/lisianthus2.JPG" class="img-fluid rounded-start" alt="Ramo Lisianthus">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lisianthus</h5>
+                                    <p class="card-text">Varas perfumadas nacionales.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">12 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">24 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">36 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Alstroemerias Arcoiris -->
+    <div class="modal fade" id="alstroemeriasArcoiris" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/alstroemeria2.JPG" class="img-fluid rounded-start" alt="Ramo Alstroemeria">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alstroemerias Arcoiris</h5>
+                                    <p class="card-text">Varas perfumadas nacionales.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">12 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">24 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">36 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Alstroemerias Otoño -->
+    <div class="modal fade" id="alstroemeriasOtonio" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/alstroemeria-otonio2.JPG" class="img-fluid rounded-start" alt="Ramo Alstroemeria">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alstroemerias Otoño</h5>
+                                    <p class="card-text">Varas perfumadas nacionales.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">12 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">24 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">36 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lilium Pink -->
+    <div class="modal fade" id="liliumPink" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/lilium-pink2.JPG" class="img-fluid rounded-start" alt="Ramo Lilium Pink">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lilium Pink</h5>
+                                    <p class="card-text">Varas perfumadas nacionales.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">15 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">30 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">45 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lilium Blancas -->
+    <div class="modal fade" id="liliumBlancas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/lilium-blancas2.JPG" class="img-fluid rounded-start" alt="Ramo Lilium Orange">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lilium Blancas</h5>
+                                    <p class="card-text">Varas perfumadas nacionales.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">15 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">30 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">45 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lilium Golden -->
+    <div class="modal fade" id="liliumGolden" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row g-0 card__container-mq">
+                            <div class="col-md-7 card__img-container-mq">
+                                <img src="../images/img_flores/lilium-golden2.JPG" class="img-fluid rounded-start" alt="Ramo Lilium Orange">
+                            </div>
+                            <div class="col-md-5 card__body-mq">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lilium Golden</h5>
+                                    <p class="card-text">Varas perfumadas nacionales.</p>
+                                    <h6 class="card-subtitle mb-2 text-muted">Elegir cantidad deseada:</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">15 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">30 Unidades</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">45 Unidades</label>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">*Solicitanos sobre y papel carta sin cargo.</small></p>
+
+                                    <!-- Cards Medios de Envío -->
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-home services__icon"></i>
+                                        <p class="card-text d-inline">Retiro en nuestro local</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">Av Cordoba y Paso, CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+
+                                    <div class="mt-3 mb-2">
+                                        <i class="fas fa-truck services__icon"></i>
+                                        <p class="card-text d-inline">Envíos a domicilio</p>
+                                    </div>
+                                    <div class="card w-90 flex-row shadow rounded">
+                                        <div class="card-body">En el día dentro de CABA.</div>
+                                        <div class="card-body fw-bold">Gratis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn products__btn product__btn-fl-cart"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    <a href="./error.html" class="btn products__btn product__btn-fl-cart">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
     <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>

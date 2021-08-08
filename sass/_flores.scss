@@ -11,3 +11,15 @@
     transition: $transition-time;
   }
 }
+
+
+@media only screen and (max-width: 991px) {
+  .card__container-mq{
+      .card__img-container-mq{
+          width: 100%;
+      }
+      .card__body-mq{
+          width: 100%;
+      }
+  }
+}

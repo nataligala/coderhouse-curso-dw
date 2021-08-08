@@ -50,6 +50,7 @@
 
       /* Clase agregada para modificar clase bootstrap */
       .featured__card-img {
+        padding: 10px;
         height: 10%;
         &:hover {
           opacity: 0.6;
@@ -76,17 +77,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(../images/subs_banner.jpg);
+  background-image: url(../images/img_inicio/subs_banner.jpg);
   margin: 100px 0;
   .services__item {
     background-color: white;
     box-shadow: 2px 2px 5px 1px $font-color;
-    width: 30%;
-    height: 190px;
+    width: 20%;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
+    justify-content: center;
     .services__icon {
       color: $dark-green;
       font-size: 40px;
@@ -115,6 +116,7 @@
     margin-bottom: 10px;
   }
 
+
   .contact__btn {
     @extend .featured__card-btn;
     background-color: $bg-color-buttom-cart;
@@ -128,10 +130,15 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+
+
+
+
+@media only screen and (max-width: 900px) {
   .featured{
     height: fit-content;
     .featured__container {
+      display: flex;
       flex-direction: column;
 
       .featured__card{
@@ -143,17 +150,39 @@
       text-align: center;
     }
   }
+}
 
+@media only screen and (max-width: 576px) {
   .services{
-    .services__container{
-      height: fit-content;
-      flex-direction: column;
-      background-image: none;
-      background-color: $dark-green;
+      .services__container{
+          display: flex;
+          height: fit-content;
+          flex-direction: column;
+          background-image: url(../images/img_inicio/subs_banner2.jpg);
+          background-repeat: no-repeat;
+          background-size: auto;
+  
+              
+        .services__item{
+          margin: 15px;
+          height: fit-content;
+          padding: 15px;
+            .services__title{
+              font-size: 1em;
+            }
+        
+        } 
+      }
+  }
 
-      .services__item{
-        margin: 10px 5px;
-      } 
-    }
+  .delivery{
+      .delivery__container{
+          .delivery__title{
+              font-size: 1.2em;
+          }
+      }
   }
 }
+
+
+
