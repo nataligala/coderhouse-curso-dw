@@ -1,6 +1,9 @@
 
 .header{
     background-color: $bg-color-header;
+    position: sticky;
+    z-index: 3;
+    top: 0px;
     .header__nav{
         .header__img{
             width: 50px;
@@ -11,7 +14,6 @@
             color: $font-color;
             font-size: 18px;
             font-weight: lighter;
-            padding: 15px;
             &:hover{
                 background-color: $bg-color-header-hover;
                 color: $bg-color-header;

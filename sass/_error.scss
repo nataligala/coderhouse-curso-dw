@@ -14,8 +14,9 @@
 @media only screen and (max-width: 768px) {
     .video{
         .video__container{
+            margin-top: 20vh;
             .video__item{
-                height: 50vh;
+                height: 60vh;
             }
         }
     }
@@ -24,12 +25,13 @@
 @media only screen and (max-width: 576px) {
     .page{
         .page__title{
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
     }
 
     .video{
         .video__container{
+            margin-top: 15vh;
             .video__item{
                 height: 40vh;
             }

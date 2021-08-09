@@ -9,7 +9,7 @@
     .intro__title {
       font-family: $font-secundaria;
       color: $logo-color;
-      font-size: 4rem;
+      font-size: 4em;
       text-align: center;
     }
 
@@ -21,7 +21,7 @@
 
     .intro__text {
       color: $font-color;
-      font-size: 19px;
+      font-size: 1.3em;
       font-weight: lighter;
       text-align: center;
     }
@@ -155,13 +155,18 @@
 
 @media only screen and (max-width: 576px) {
   .intro{
+    margin: 50px;
     .intro__container{
       .intro__title{
         font-size: 3em;
+        text-align: center;
         .intro__logo{
           width: 40px;
           height: 40px;
         }
+      }
+      .intro__text{
+        font-size: 1em;
       }
     }
   }
@@ -197,3 +202,41 @@
 
 
 
+
+@media only screen and (max-width: 431px) {
+  .intro{
+    .intro__container{
+      .intro__title{
+        font-size: 3em;
+      }
+    }
+  }
+  .featured{
+    .featured__title{
+      font-size: 1.3em;
+    }
+  }
+
+  .delivery{
+    .delivery__container{
+      display: none;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .intro{
+    .intro__container{
+      .intro__title{
+        font-size: 2.5em;
+      }
+    }
+  }
+
+  .featured{
+    .featured__title{
+      font-size: 1.1em;
+    }
+  }
+}
