@@ -1,3 +1,4 @@
+@import "mixins";
 
 .header{
     background-color: $bg-color-header;
@@ -17,18 +18,13 @@
             &:hover{
                 background-color: $bg-color-header-hover;
                 color: $bg-color-header;
-                transition: 350ms linear;
+                transition: $transition-time;
             }
         }
 
         .header__nav-form{
-            .header__nav-form-btn{
-                color: $btn-color;
-                background-color: $bg-color-buttom-cart;
-                &:hover{
-                    background-color: $dark-green;
-                    transition:$transition-time;
-                }
+            .header__nav-btn{
+                @include boton($bg-color-buttom-cart, $btn-color, $dark-green, $transition-time);
             }
         }
     }

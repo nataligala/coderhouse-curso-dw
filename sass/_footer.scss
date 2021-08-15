@@ -9,7 +9,7 @@ footer{
         justify-content: space-between;
         
         .footer__text{
-            font-size: 1.2em;
+            font-size: $font-size-s;
             color: $bg-color-header;
             margin-left: 20px;
         }

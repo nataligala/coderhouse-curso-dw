@@ -1,17 +1,15 @@
 
 
-.product__btn-fl-cart {
-  // ------------- Extend
-  @extend .featured__card-btn;
-  background-color: $dark-pink;
-  color: $dark-blue;
-  &:hover {
-    background-color: $bg-color-hover-buttom-cart;
-    color: $white;
-    transition: $transition-time;
-  }
+.products__btn{
+  @include boton($dark-pink, $dark-blue, $bg-color-hover-buttom-cart, $transition-time);
+  &:hover{color:$white};
+  margin: 20px 5px; 
 }
 
+
+
+
+/* --- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 991px) {
   .card__container-mq{

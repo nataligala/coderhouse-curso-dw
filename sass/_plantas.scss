@@ -1,3 +1,4 @@
+@import "mixins";
 
 .products__container{
     display: flex;
@@ -13,7 +14,7 @@
         width: 300px;
         margin: 15px;
           &:hover{
-            opacity: 0.6;
+            opacity: $opacity;
         }
       }
       .products__img-texts{
@@ -26,21 +27,9 @@
         display: flex;
         justify-content: center;
   
-        .products__btn{
-          width: 130px;
-          padding: 8px;
+        .products__btn-cart {
+          @include boton($bg-color-buttom-cart, $btn-color, $bg-color-hover-buttom-cart, $transition-time);
           margin: 20px 0px;
-          border-style: none;
-        }
-  
-        .product__btn-cart {
-          @extend .featured__card-btn;
-          background-color:  $bg-color-buttom-cart;
-          color: $btn-color;
-          &:hover { 
-            background-color: $bg-color-hover-buttom-cart;
-            transition:$transition-time;
-          }
         }
       }
     }

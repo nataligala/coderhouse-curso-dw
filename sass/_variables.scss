@@ -22,7 +22,7 @@ $medium-grey: #C2C2C2;
 $light-grey:  #a8a8a8;
 
 
-/*Background secciones */
+/* Background secciones */
 $bg-color-header: $white; 
 $bg-color-header-hover: $light-green;
 $bg-color-footer: $medium-green;
@@ -39,7 +39,6 @@ $bg-color-hover-buttom: $dark-blue;
 $bg-color-form-btn: $medium-green;
 $bg-color-form-btn-hover: $dark-green;
 
-
 $bg-color-buttom-cart: $medium-green;
 $bg-color-hover-buttom-cart: $dark-green;
 
@@ -51,8 +50,13 @@ $font-color: $light-grey;
 $btn-color: $white;
 $logo-color: $dark-green;
 
+
+
 /* Transición */
 $transition-time: 350ms linear;
+
+/* Opacity */
+$opacity: 0.6;
 
 
 

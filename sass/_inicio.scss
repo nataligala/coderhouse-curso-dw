@@ -1,16 +1,17 @@
+@import "mixins";
 // ---------- PAGINA INDEX
 
 /* -- Presentación -- */
 .intro {
   margin: 80px;
   .intro__container {
-    line-height: 1.2;
+    line-height: $line-height-m;
 
     .intro__title {
       font-family: $font-secundaria;
       color: $logo-color;
-      font-size: 4em;
-      text-align: center;
+      font-size: $font-size-xl;
+      text-align: $text-align;
     }
 
     .intro__logo {
@@ -21,9 +22,9 @@
 
     .intro__text {
       color: $font-color;
-      font-size: 1.3em;
+      font-size: $font-size-m;
       font-weight: lighter;
-      text-align: center;
+      text-align: $text-align;
     }
   }
 }
@@ -35,9 +36,9 @@
 
   .featured__title {
     color: $title-color;
-    letter-spacing: 0.4em;
+    letter-spacing: $letter-spacing;
     padding: 20px;
-    text-align: center;
+    text-align: $text-align;
   }
 
   .featured__container {
@@ -53,18 +54,14 @@
         padding: 10px;
         height: 10%;
         &:hover {
-          opacity: 0.6;
+          opacity: $opacity;
         }
       }
     }
 
     /* Clase agregada para modificar clase bootstrap */
     .featured__card-btn {
-      background-color: $bg-color-buttom;
-      color: $btn-color;
-      &:hover {
-        background-color: $bg-color-hover-buttom;
-      }
+      @include boton($bg-color-buttom, $btn-color, $bg-color-hover-buttom, $transition-time);
     }
   }
 }
@@ -80,7 +77,7 @@
   background-image: url(../images/img_inicio/subs_banner.jpg);
   margin: 100px 0;
   .services__item {
-    background-color: white;
+    background-color:$white;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 1px $font-color;
     width: 20%;
@@ -94,8 +91,8 @@
       font-size: 40px;
     }
     .services__title {
-      font-size: 1.2rem;
-      text-align: center;
+      font-size: $font-size-s;
+      text-align: $text-align;
     }
   }
 }
@@ -111,29 +108,25 @@
   box-shadow: 2px 2px 5px 1px $font-color;
   .delivery__title {
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: $font-size-m;
   }
   .delivery__description {
     margin-bottom: 10px;
+    font-size: $font-size-s;
   }
 
 
-  .contact__btn {
-    @extend .featured__card-btn;
-    background-color: $bg-color-buttom-cart;
+
+  .delivery__btn {
+    @include boton($bg-color-buttom-cart, $btn-color, $bg-color-hover-buttom-cart, $transition-time);
     margin-top: 20px;
     align-self: center;
-    color: $btn-color;
-    &:hover {
-      background-color: $bg-color-hover-buttom-cart;
-    }
   }
 }
 
 
 
-
-
+/* --- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 900px) {
   .featured{
@@ -148,7 +141,7 @@
     } 
 
     .featured__card-body{
-      text-align: center;
+      text-align: $text-align;
     }
   }
 }

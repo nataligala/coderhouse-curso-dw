@@ -1,4 +1,4 @@
-<h1 align="center">Hola 👋, Soy Natali</h1>
+<h1 align="center">Hola 👋, Soy Natalí</h1>
 <p>Este es mi proyecto del curso de Desarrollo Web de Coder House:</p>
 <p> Una página dedicada a un negocio familiar de venta de flores y plantas "Flores Babel" 💐🌱</p>
 <h3 align="left">Tecnologías utilizadas en este proyecto</h3>

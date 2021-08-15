@@ -1,0 +1,8 @@
+@mixin boton($bgcolor, $color, $bgcolorh, $trans) {
+    background-color:  $bgcolor;
+    color: $color;
+    &:hover { 
+        background-color: $bgcolorh;
+        transition:$trans;
+    }
+}

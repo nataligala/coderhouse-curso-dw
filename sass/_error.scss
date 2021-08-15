@@ -1,5 +1,19 @@
+@import "mixins";
+
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .error__btn{
+        @include boton($dark-pink, $dark-blue, $bg-color-hover-buttom-cart, $transition-time);
+        &:hover{color:$white};
+        max-width: 100px;
+    }
+}
+
 .video{
-    margin-bottom: 20px;
+    margin-top: 50px;
     .video__container{
         width: 100%;
         display: flex;
@@ -11,10 +25,13 @@
     }
 }
 
+
+/* --- MEDIA QUERIES --- */
+
 @media only screen and (max-width: 768px) {
     .video{
+        margin-top: 120px;
         .video__container{
-            margin-top: 20vh;
             .video__item{
                 height: 60vh;
             }
@@ -30,8 +47,8 @@
     }
 
     .video{
+        margin-top: 100px;
         .video__container{
-            margin-top: 15vh;
             .video__item{
                 height: 40vh;
             }
@@ -52,5 +69,12 @@
                 height: 30vh;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 304px) {
+
+    .video{
+        margin-top: 120px;
     }
 }

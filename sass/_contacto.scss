@@ -33,15 +33,12 @@
     }
 
       .form__btn {
-        @extend .featured__card-btn;
-        background-color:  $bg-color-form-btn;
-        color: $white;
-        &:hover { 
-          background-color: $bg-color-form-btn-hover;
-          transition: $transition-time;
-        }
+        @include boton($bg-color-form-btn, $white, $bg-color-form-btn-hover, $transition-time);
       }
 }
+
+
+/* --- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 768px) {
   .form{
